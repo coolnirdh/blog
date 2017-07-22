@@ -11,9 +11,10 @@ This is application is made for demonstrating features of Laravel, and to help o
 1. Create an application directory anywhere you like via command prompt: `laravel new <appName>`
 2. Import project directory in your favorite IDE and run `php artisan serve` to host the web application
 3. Create new user and new database via phpmyadmin, update `.env` file with corresponding details
-4. Run `php artisan migrate` and if it fails with error about key being too long, update `AppServiceProvider.php` as follows and perform migration again:
+4. Run `php artisan migrate` and if it fails with error about key being too long, then drop all tables from the database, update `AppServiceProvider.php` as follows, and attempt migration again:
     ```php
     use Illuminate\Support\Facades\Schema;
+    ...
     public function boot()
     {
         Schema::defaultStringLength(191);
