@@ -21,7 +21,7 @@ This is application is made for demonstrating features of Laravel, and to help o
     }
     ```
 5. Run `php artisan make:auth` to generate scaffolding for authentication
-6. 
+6. Update `.env` file to set SMTP details for testing authentication features, using [Gmail's SMTP Settings](https://support.google.com/a/answer/176600?hl=en), and then run `php artisan serve` again to play around.
 	
 ## Basics:
 0. Artisan commands and help
@@ -35,7 +35,6 @@ This is application is made for demonstrating features of Laravel, and to help o
 ## Advanced:
 Session Flash, View Composer, Middleware, Events, Localization, Task Scheduling, Queues, APIs
 
-	
 ## References:
 1. https://laracasts.com/series/laravel-from-scratch-2017
 2. https://laravel-news.com/laravel-5-4-key-too-long-error
