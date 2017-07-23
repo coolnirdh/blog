@@ -41,9 +41,14 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'title' => 'required|unique:posts|min:5|max:50',
+            'body' => 'required|min:5|max:2000'
+        ]);
+
         $post = Post::make($request->all());
         auth()->user()->createPost($post);
-        return redirect()->back();
+        return redirect('/posts');
     }
 
     /**
