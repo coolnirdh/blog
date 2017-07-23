@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::with('user')->get();
+        $posts = Post::with('user')->orderByDesc('created_at')->get();
         return view('posts.index')->with('posts', $posts);
     }
 
