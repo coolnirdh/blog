@@ -28,10 +28,10 @@ This is application is made for demonstrating features of Laravel, and to help o
 0. Artisan commands and help
 1. Auth, Mail
 2. Routes
-3. Blade Views and Layouts, SASS
-4. Eloquent Models, Migrations, Relationships
-5. Controllers, Route-Binding, returning JSON
-6. CSRF Tokens, Form Validation, Carbon, DB Seeding
+3. Migrations, Eloquent Models, Relationships, DB Seeding, Eager Loading
+4. Controllers, Route-Binding, returning JSON
+5. Blade Views and Layouts
+6. Carbon, CSRF Tokens, Form Validation
 
 ## Advanced:
 Session Flash, View Composer, Middleware, Events, Localization, Task Scheduling, Queues, APIs
@@ -39,4 +39,3 @@ Session Flash, View Composer, Middleware, Events, Localization, Task Scheduling,
 ## References:
 1. https://laracasts.com/series/laravel-from-scratch-2017
 2. https://laravel-news.com/laravel-5-4-key-too-long-error
-3. 
