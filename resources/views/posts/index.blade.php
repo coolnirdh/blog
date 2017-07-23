@@ -11,6 +11,7 @@
         <br/>
         <small><a href="#">{{ $post->user->name }}</a> on <b>{{ $post->created_at->toFormattedDateString() }}</b></small>
     </h3>
+
     <p>{{ $post->body }}</p>
     <br/>
 </div>
