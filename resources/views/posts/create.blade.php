@@ -7,13 +7,14 @@
 <br/>
 
 <form action="/posts" method="post">
+    {{ csrf_field() }}
     <div class="form-group">
         <label class="control-label" for="title">Title</label>
-        <input class="form-control" type="text" id="title"/>
+        <input class="form-control" type="text" name="title"/>
     </div>
     <div class="form-group">
         <label class="control-label" for="body">Body</label>
-        <textarea class="form-control" id="body" rows="3"></textarea>
+        <textarea class="form-control" name="body" rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Create Post</button>
 </form>

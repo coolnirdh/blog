@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +41,9 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $post = Post::make($request->all());
+        auth()->user()->createPost($post);
+        return redirect()->back();
     }
 
     /**
