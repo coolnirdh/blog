@@ -22,13 +22,14 @@ This is application is made for demonstrating features of Laravel, and to help o
     ```
 5. Run `php artisan make:auth` to generate scaffolding for authentication
 6. Update `.env` file to set SMTP details for testing authentication features, using [Gmail's SMTP Settings](https://support.google.com/a/answer/176600?hl=en), and then run `php artisan serve` again to play around.
+7. Use `php artisan make:model -mcr <Entity>` to create model, Migration, and Controller that works with the Resource. Then perform migration, and add new routes to `web.php` for each of the methods in Controller to play around. One could also use `php artisan tinker` to try out commands quickly.
 	
 ## Basics:
 0. Artisan commands and help
 1. Auth, Mail
 2. Routes
 3. Blade Views and Layouts, SASS
-4. Eloquent Models, Migrations
+4. Eloquent Models, Migrations, Relationships
 5. Controllers, Route-Binding, returning JSON
 6. CSRF Tokens, Form Validation, Carbon, DB Seeding
 
